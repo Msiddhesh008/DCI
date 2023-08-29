@@ -13,6 +13,28 @@
 
     <title>DCI</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Style for the select element */
+        .form-control {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: white;
+          font-size: 16px;
+        }
+        .form-control:focus{
+            border: 1px solid #030389;
+        }
+      
+        /* Style for the dropdown options */
+        .form-control option {
+          background-color: #f2f2f2;
+          font-size: 14px;
+          padding: 5px;
+        }
+      </style>
 </head>
 <body>
     <section class="banner container-fluid">
@@ -28,7 +50,7 @@
 
                     <form class=" form">
                         <img src="Images/form-pattern.png" alt="">
-                        <h1 class="text-center">Contact Us</h1>
+                        <h1 class="text-center">Be A Part</h1>
                         <div class="input-group mb-3 rounded-3">
                             <i class="bi bi-person input-group-text bg-white"></i>
                             <input class="form-control p-2" placeholder="Enter your name" type="text">
@@ -42,8 +64,15 @@
                             <!-- <input class="form-control p-2" placeholder="Bussiness catagory" type="text"> -->
                             <select class="form-control">
                                 <option value="Bussiness catagory">Bussiness catagory</option>
-                                <option value="option2">Option 2</option>
-                                <option value="option3">Option 3</option>
+                                <option value="Retail & E-commerce">Retail & E-commerce</option>
+                                <option value="Food & Beverage">Food & Beverage</option>
+                                <option value="Services">Services</option>
+                                <option value="Decorater">Decorater</option>
+                                <option value="Texttile Apparel">Texttile Apparel</option>
+                                <option value="Are & Entertainment">Are & Entertainment</option>
+                                <option value="Eductaion & Training">Eductaion & Training</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Other">Other</option>
                                 <!-- ... more options ... -->
                               </select>
                         </div>
@@ -55,7 +84,7 @@
                             <i class="bi bi-geo-alt input-group-text bg-white"></i>
                             <input class="form-control p-2" placeholder="Bussiness Address" type="text">
                         </div>
-                        <input  class="form-control form-submit p-2" type="submit">
+                        <Button  class="form-submit p-2" type="submit">Register Now</Button>
                     </form>
                 </div>
             </div>
