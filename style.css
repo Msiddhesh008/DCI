@@ -17,6 +17,9 @@ body{
     background-position: center center;
     color: #ffffff;
 }
+.logo-bg{
+    width: 500px;
+}
 .logo{
     position: absolute;
     z-index: 1;
@@ -125,6 +128,8 @@ body{
 .join-today-banner{
     position: absolute;
     right: 0;
+    height: 100%;
+    width: 100%;
 }
 .join-today-pat{
     position: absolute;
@@ -266,6 +271,69 @@ footer .container{
     text-decoration: none;
     cursor: pointer;
   }
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .form{
+        background-color: #FFFFFF;
+        transform: translate(0px, 80px);
+        width: auto;
+        height: 500px;
+    }
+    .empowering-indian-image{
+        width: 400px;
+    }
+    .logo-bg{
+        width: 300px;
+    }
+    .span-blue{
+        position: absolute;
+        width: 175px;
+        height: 100px;
+        border-radius: 1rem;
+        background-color: #5151AE;
+        z-index: -1;
+        transform: translate(117px, 28px);
+        
+    }
+    .join-today-col-left{
+        background-color: #030389;
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+    .join-today-col-right{
+        background-color: #030389;
+        border-radius: 0 0 2rem 2rem;
+        overflow: hidden;
+    }
+    .join-today-row{
+        height: auto;
+    }
+    .join-today-banner{
+        width: 250px ;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
 
 
 
