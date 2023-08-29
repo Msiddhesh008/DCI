@@ -34,6 +34,8 @@
           font-size: 14px;
           padding: 5px;
         }
+
+        
       </style>
 </head>
 <body>
@@ -47,6 +49,23 @@
                     <p class="fs-4">A government recognized free to use marketplace. No listing fee, connect with customers from all across India.</p>
                 </div>
                 <div  class="col-lg-6 col-12 banner-right d-flex flex-column justify-content-center">
+
+                    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close text-end">&times;</span>
+        <h3 class="otp-header fw-bolder mb-4 text-center">Please Enter OTP</h3>
+        <input class="form-control p-2 mb-3" placeholder="OTP" type="text">
+        <div class="modal-btn-cnt">
+            <button>Resend</button>
+            <button>Submit</button>
+        </div>
+    </div>
+  
+  </div>
+  
 
                     <form class=" form">
                         <img src="Images/form-pattern.png" alt="">
@@ -65,7 +84,7 @@
                             <select class="form-control">
                                 <option value="Bussiness catagory">Bussiness catagory</option>
                                 <option value="Retail & E-commerce">Retail & E-commerce</option>
-                                <option value="Food & Beverage">Food & Beverage</option>
+                                <option class="option" value="Food & Beverage">Food & Beverage </option>
                                 <option value="Services">Services</option>
                                 <option value="Decorater">Decorater</option>
                                 <option value="Texttile Apparel">Texttile Apparel</option>
@@ -84,7 +103,7 @@
                             <i class="bi bi-geo-alt input-group-text bg-white"></i>
                             <input class="form-control p-2" placeholder="Bussiness Address" type="text">
                         </div>
-                        <Button  class="form-submit p-2" type="submit">Register Now</Button>
+                        <Button id="myBtn"  data-toggle="modal" data-target="#exampleModal"  class="form-submit p-2" type="button">Register Now</Button>
                     </form>
                 </div>
             </div>
@@ -209,9 +228,9 @@
     </section>
 
     <footer class="container-fluid pt-5">
-        <img src="Images/footer-pattern-right.png" width="100px" class="footer-pattern-right" alt="">
-        <img src="Images/footer-pattern-left.png" width="200px" class="footer-pattern-left" alt="">
         <div class="container">
+            <img src="Images/footer-pattern-right.png" width="100px" class="footer-pattern-right" alt="">
+            <img src="Images/footer-pattern-left.png" width="200px" class="footer-pattern-left" alt="">
             <div class="p-5">
                 <img src="Images/logo.png" width="150px" alt="">
             </div>
@@ -247,7 +266,6 @@
 
 
 
-
     <!-- Optional JavaScript; choose one of the two! -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -258,6 +276,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
     <script>
         AOS.init();
       </script>
