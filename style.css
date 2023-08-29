@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #CBCBCB42;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/bg.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff;
+}
+.logo{
+    position: absolute;
+    z-index: 1;
+}
+.form{
+    background-color: #FFFFFF;
+    transform: translate(80px, 134px);
+    width: 450px;
+    height: 500px;
+    border-radius: 36px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: #030389;
+    border-bottom-color: #030389;
+    border-right-width: 0.4rem;
+    border-bottom-width: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding: 2rem;
+}
+.form img{
+    position: absolute;
+    left: -30px;
+    top: -60px;
+}
+.form h1{
+    color: #030389;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.form-submit{
+    background-color: #030389;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+
+
+.empowering-indian{
+    width: 100vw;
+    height: 100vh;
+}
+.empowering-indian h1{
+    color: #030389;
+}
+.empowering-indian p{
+    color: #000000;
+}
+.empowering-indian-point{
+    color: #000000;
+}
+.benifits{
+    height: auto;
+    width: 100vw;
+}
+.benifits-title{
+    color: #030389;
+}
+.empowering-indian-image{
+    width: 600px;
+}
+.benifits-card{
+    padding: 1.8rem 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.benifits-card p{
+    color: #000000;
+}
+
+
+
+
+.join-today-row{
+    height: 490px;
+}
+.join-today-col-left{
+    background-color: #030389;
+    border-radius: 2rem 0 0 2rem;
+}
+.join-today-col-right{
+    background-color: #030389;
+    border-radius: 0 2rem 2rem 0;
+    overflow: hidden;
+}
+.join-today-right{
+    position: relative;
+}
+.join-today-banner{
+    position: absolute;
+    right: 0;
+}
+.join-today-pat{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.join-today h1{
+    color: #ffffff;
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+.join-today p{
+    color: #ffffff;
+}
+.join-today-button{
+    background-color: #ffffff;
+    border: none;
+    padding: 0.5rem 4rem;
+    color: #030389;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+.span-blue{
+    position: absolute;
+    width: 875px;
+    height: 100px;
+    border-radius: 1rem;
+    background-color: #5151AE;
+    z-index: -1;
+    transform: translate(117px, 28px);
+    
+}
+footer{
+    position: relative;
+    overflow: hidden;
+}
+footer .container{
+    border-top: 9px solid #0303891F;
+}
+.footer-col{
+    border-right: 1px solid #0303891F;
+    border-left: 0px solid #0303891F;
+}
+.footer-pattern-right{
+    position: absolute;
+    right: 70px;
+
+}
+.footer-pattern-left{
+    position: absolute;
+    left: 1px;
+    bottom: -28px;
+    z-index: -1;
+}
+
