@@ -21,6 +21,9 @@ body{
     position: absolute;
     z-index: 1;
 }
+.otp-header{
+    color: #030389;
+}
 .form{
     background-color: #FFFFFF;
     transform: translate(80px, 134px);
@@ -54,15 +57,24 @@ body{
     color: #FFFFFF;
     font-weight: 500;
     width: 100%;
-    border: none;
+    border: 1px solid #030389;
     border-radius: 0.2rem;
+    /* transition: 0.5s; */
+}
+.form-submit:hover{
+    background-color: white;
+    color: #030389;
+    border: 1px solid #030389;
+}
+.input-group i{
+    color: #030389;
 }
 
 
 
 .empowering-indian{
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 .empowering-indian h1{
     color: #030389;
@@ -153,8 +165,10 @@ body{
 footer{
     position: relative;
     overflow: hidden;
+    height: auto;
 }
 footer .container{
+    position: relative;
     border-top: 9px solid #0303891F;
 }
 .footer-col{
@@ -163,13 +177,97 @@ footer .container{
 }
 .footer-pattern-right{
     position: absolute;
-    right: 70px;
-
+    right: -35px;
+    top: -10px;
 }
 .footer-pattern-left{
     position: absolute;
-    left: 1px;
+    left: -105px;
     bottom: -28px;
     z-index: -1;
 }
 
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: 1s;
+    
+    backdrop-filter: blur(5px);
+  }
+  .modal-btn-cnt{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .modal-btn-cnt button{
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    background-color: #5151AE;
+    color: #fff;
+    border-radius: 0.2rem;
+    font-size: small;
+    transition: 0.5s;
+  }
+
+  .modal-btn-cnt button:hover{
+    background-color: #030389;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+
+    display: flex;
+
+    border-radius: 18px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: #030389;
+    border-bottom-color: #030389;
+    border-right-width: 0.2rem;
+    border-bottom-width: 0.4rem;
+
+
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+  
