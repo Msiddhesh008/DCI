@@ -53,6 +53,9 @@ body{
     background-color: #030389;
     color: #FFFFFF;
     font-weight: 500;
+    width: 100%;
+    border: none;
+    border-radius: 0.2rem;
 }
 
 
